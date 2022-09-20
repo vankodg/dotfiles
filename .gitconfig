@@ -1,0 +1,10 @@
+[include]
+        path = /env/PC/include/gitconfig
+        path = k:/include/gitconfig
+[scmcheck]
+	pcgitsetuprev = 2
+[user]
+	name = Daniel Vanko
+	email = daniel.vanko@ericsson.com
+[core]
+	editor = vim

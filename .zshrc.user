@@ -1,0 +1,54 @@
+module load python/3.10.5
+module load python/3.8-addons-virtualenv
+module load python/3.8-addons-pip-20.0.2
+module load lua/5.3.5
+module load xclip/0.12
+module load tmux/3.2
+module load sqlite/3.29.0
+module load ripgrep/13.0.0
+module load vscode/1.64.2
+module load neovim/0.7.0
+module load clang/14.0.6
+module load ninja/1.10.2
+module load gcc/12.1.0
+module load rust/1.60.0
+module load ccls/0.20210330
+
+ZSH_DISABLE_COMPFIX=true
+source ~/.zshrc.oh-my-zsh
+
+# Lines configured by zsh-newuser-install
+#HISTFILE=~/.zsh_histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/enndvaa/.zshrc.user'
+
+autoload -Uz compinit
+compinit -u
+# End of lines added by compinstall
+
+alias vi='vim'
+alias vim='nvim --clean'
+alias n='nvim'
+alias e='$EDITOR'
+export EDITOR=nvim
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ll='ls -laFqh'
+
+#set up quick change to current working repository and setup_workspace
+export CWR=/workspace/git/enndvaa/epg
+alias cwr='cd $CWR'
+alias csw='cwr && sw'
+
+# fuzzy finder fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias myconfig='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+echo ".zshrc.user sourced"

@@ -1,0 +1,8 @@
+require('vankod.settings')
+require('vankod.maps')
+require('vankod.plugins')
+require('vankod.telescope')
+require('vankod.gitsigns')
+require('vankod.lsp')
+require('vankod.treesitter')
+require('vankod.autopairs')
