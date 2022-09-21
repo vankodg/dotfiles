@@ -33,6 +33,8 @@ Plug 'onsails/lspkind-nvim'
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate' })
 -- autopairs
 Plug 'windwp/nvim-autopairs'
+-- hop.nvim, enhancing motions
+Plug 'phaazon/hop.nvim'
 
 vim.call('plug#end')
 

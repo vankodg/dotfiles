@@ -55,8 +55,7 @@ set.smartcase = true
 set.colorcolumn = {'120'}
 
 -- turn off default mode
-set.showmode = false
+set.showmode = true
 
 -- split to right
 set.splitright = true
-
